@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navBar">
+        <div class="logo-cont">
+          <img class="logo" src="/src/butterfly (1).png" alt="img" />
+
+          <svg class="export">
+            <use xlink:href="icons.svg#icon-search"></use>
+          </svg>
+        </div>
+        <nav class="navItem">
+          <svg class="export">
+            <use xlink:href="icons.svg#icon-home-fill"></use>
+          </svg>
+          <svg class="export">
+            <use xlink:href="icons.svg#icon-news"></use>
+          </svg>
+
+          <svg class="export">
+            <use xlink:href="icons.svg#icon-bullet-list"></use>
+          </svg>
+          <svg class="export">
+            <use xlink:href="icons.svg#icon-user"></use>
+          </svg>
+          <div class="bottom-nav-item">
+            <svg class="export">
+              <use xlink:href="icons.svg#icon-notification"></use>
+            </svg>
+            <svg class="export">
+              <use xlink:href="icons.svg#icon-export"></use>
+            </svg>
+          </div>
+        </nav>
+      </nav>
+      <div class="section-account">
+        <div class="prfile-image">
+          <img class="user-img" src="./profileImage.jpeg" alt="" />
+
+          <div>
+            <h1>Hi Mike,</h1>
+
+            <p>welocme back</p>
+          </div>
+        </div>
+        <div class="account-info">
+          <h4>
+            <span>Today</span>
+          </h4>
+          <div class="money-info">
+            <h4>
+              <span>&dollar;19,829</span>
+              <p>Account Balance</p>
+            </h4>
+            <div class="inerest">
+              <h4>
+                &dollar; 4,000
+                <p>Year-to-Date</p>
+              </h4>
+              <h4>
+                &dollar;1,892
+                <p>Total Interest</p>
+              </h4>
+            </div>
+          </div>
+
+          <div class="btn-i-want-to">
+            <button>
+              <p>I want to</p>
+              <select></select>
+            </button>
+          </div>
+        </div>
+        <div class="recent-transaction">
+          <h4>Recent Transaction</h4>
+          <div class="transfers">
+            <label for="transaction">
+              <span>2020-08-07</span>
+              <p>Withdrawl transfer to Bank-XXX11</p>
+            </label>
+            <label for="transaction">
+              <span>2020-08-07</span>
+              <p>Withdrawl transfer to Bank-XXX11</p>
+            </label>
+            <label for="transaction">
+              <span>2020-08-07</span>
+              <p>Withdrawl transfer to Bank-XXX11</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="section-account-description">
+        <div class="section-retirement">
+          <h2>Retirement Income</h2>
+          <h1>Starting Year 2056</h1>
+          <div class="target">
+            <div class="items">
+              <span>&dollar;300,000</span>
+
+              <p>My Goal</p>
+            </div>
+            <div class="item-fr-mob">
+              <div class="items">
+                <span>59%</span>
+                <p>Goal Achived</p>
+              </div>
+
+              <div class="items">
+                <span>K 300</span>
+                <p>Est. Monthly Income</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-contribution"></div>
+        </div>
+        <div class="section-contribution-graph">
+          <h2>Contributions Overtime</h2>
+          <div>
+            <canvas
+              id="acquisitions"
+              style="width: 1.5rem; height: 0.5rem"
+            ></canvas>
+          </div>
+        </div>
+        <section class="section-compare">
+          <h2>How do I compare to my peers?</h2>
+          <p>These numbers represents current goal achievement</p>
+          <div class="chart-selection">
+            <div class="options">
+              <div class="option">
+                <label for="age">Age:</label>
+                <select>
+                  <option value="under-30">Under 30</option>
+                  <option value="under-40">under-40</option>
+                </select>
+              </div>
+              <div class="option">
+                <label for="salary">Salary:</label>
+                <select>
+                  <option value="salary">K-20 - k-30</option>
+                  <option value="salary">K-30 - k-40</option>
+                </select>
+              </div>
+              <div class="option">
+                <label for="gender">Gender:</label>
+                <select>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- circular charts  -->
+            <div class="circular-chart">
+              <div class="circular-charts">
+                <div
+                  class="circular-progress"
+                  data-inner-circle-color="white"
+                  data-percentage="80"
+                  data-progress-color="#22d6aa"
+                  data-bg-color="#d3f7ee"
+                >
+                  <div class="inner-circle"></div>
+                  <p class="percentage">0%</p>
+                </div>
+              </div>
+              <div class="circular-charts">
+                <div
+                  class="circular-progress"
+                  data-inner-circle-color="white"
+                  data-percentage="80"
+                  data-progress-color="#22d6aa"
+                  data-bg-color="#d3f7ee"
+                >
+                  <div class="inner-circle"></div>
+                  <p class="percentage">0%</p>
+                </div>
+              </div>
+              <div class="circular-charts">
+                <div
+                  class="circular-progress"
+                  data-inner-circle-color="white"
+                  data-percentage="80"
+                  data-progress-color="#22d6aa"
+                  data-bg-color="#d3f7ee"
+                >
+                  <div class="inner-circle"></div>
+                  <p class="percentage">0%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section-retirement-strategy">
+        <div class="strategy">
+          <h1>Retirement Strategy</h1>
+          <p>Employee Contribution</p>
+          <p class="range-bar">
+            <input type="range" name="emp-cont" id="employe-cont" />
+            <span>12%</span>
+          </p>
+
+          <p>Retirement Age</p>
+          <p class="range-bar">
+            <input
+              type="range"
+              min="0"
+              max="5"
+              name="emp-cont"
+              id="employe-age"
+            />
+            <span>65</span>
+          </p>
+
+          <hr />
+          <p>Employe Contribution <span>8.4%</span></p>
+
+          <p>Interest Rate <span>5%</span></p>
+
+          <button>Update</button>
+
+          <div class="help">
+            <p>View Help Docs ></p>
+          </div>
+        </div>
+        <div class="section-learn-more">
+          <p class="consider">
+            Are you considering a <br />
+            <span>Housing Advance?</span>
+          </p>
+
+          <p>Limited time reduced interest</p>
+          <p class="learn-more">Learn More ></p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-cont-mob">
+      <div class="nav-for-mob">
+        <img class="home" src="./icons/home-05-svgrepo-com (3).png" alt="" />
+        <img src="./icons/news-feed-2-svgrepo-com.png" alt="" />
+        <img src="./icons/text-bullet-list-square-svgrepo-com (1).png" alt="" />
+        <img src="./icons/user-svgrepo-com.png" alt="" />
+        <img src="./icons/search-svgrepo-com.png" alt="" />
+
+        <!-- <img src="./" alt="" /> -->
+      </div>
+    </div>
+  </body>
+</html>
+<!-- /////////////////////////////////// -->
+<!-- chart  -->
+<!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+<!-- ye wala -->
+<!-- <div style="width: 800px"><canvas id="acquisitions"></canvas></div> -->
+
+<!-- <script type="module" src="dimensions.js"></script> -->

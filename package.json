@@ -1,0 +1,17 @@
+{
+  "name": "internship-assignment",
+  "version": "1.0.0",
+  "license": "MIT",
+  "default": "drc/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir ./dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "@cubejs-client/core": "^0.31.0",
+    "chart.js": "^4.0.0"
+  }
+}
